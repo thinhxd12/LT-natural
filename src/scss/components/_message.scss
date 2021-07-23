@@ -1,0 +1,21 @@
+.message{
+    padding: 120px 0;
+    .message__info{
+        h1{
+            @include styeText(40px,700,1.2,$white-color);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        p{
+            @include styeText(16px,400,2,#e4e1e1);
+            font-family: 'Source Sans Pro', sans-serif;
+            letter-spacing: 1px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .message__button{
+        margin-top: 48px;
+    }
+}

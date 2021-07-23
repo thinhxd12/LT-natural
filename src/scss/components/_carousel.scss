@@ -1,0 +1,33 @@
+.carousel__item__1,
+.carousel__item__2,
+.carousel__item__3 {
+  width: 100%;
+  height: 760px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.slick-dots {
+  bottom: 5%;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.slick-dots li button:before {
+  color: $white-color;
+  font-size: 10px;
+  opacity: 1;
+  // margin
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff3c41;
+  font-size: 10px;
+  opacity: 1;
+}

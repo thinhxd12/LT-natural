@@ -1,0 +1,14 @@
+$white-color: #fff;
+$black-color: #000;
+$font-color: #6b6a6a;
+$primary-color: #0fc39b;
+$secondary-color: #ff3c41;
+
+@mixin styeText($fsize,$fweight,$height,$color) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $height;
+    color: $color;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,103 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 299;
+  width: 100%;
+  .header__navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 16px;
+    li {
+      a {
+        text-transform: uppercase;
+        @include styeText(15px, 400, 15px, $white-color);
+        letter-spacing: 1.5px;
+        padding: 8px 16px;
+        background: rgba(255, 253, 253, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        margin: 0 4px;
+        display: inline-block;
+        transition: 0.5s all;
+        &:hover {
+          color: $white-color;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.header__info {
+  .header__brand {
+    > a {
+      @include styeText(108px, bold, 108px, $white-color);
+      font-family: "Tangerine", cursive;
+      letter-spacing: 4px;
+      text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.27);
+      transition: 0.5s all;
+      max-width: 500px;
+      &:hover {
+        opacity: 0.8;
+        color: $white-color;
+      }
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: 500px;
+      position: absolute;
+      z-index: 99;
+      display: block;
+      background: transparent;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  position: relative;
+  margin-top: 100px;
+  z-index: 0;
+  border-radius: 30px;
+  a.btn__readmore {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__content {
+  border: 2px solid rgba(255, 255, 255, 0.19);
+  border-radius: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 0 60px;
+  h4 {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.42);
+      content: "";
+      width: 200px;
+      height: 1px;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  p {
+    @include styeText(1.2em, 400, 1.2em, $white-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 35px auto 0;
+    max-width: 700px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}

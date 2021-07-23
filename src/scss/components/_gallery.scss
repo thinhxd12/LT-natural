@@ -1,0 +1,12 @@
+.gallery__item {
+  padding: 10px;
+  transition: 0.5s all;
+  &:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+  }
+}
+
+.lb-data .lb-number {
+  display: none !important;
+}

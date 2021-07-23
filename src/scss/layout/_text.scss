@@ -1,0 +1,14 @@
+.txt__title {
+  @include styeText(40px, 500, 1.2, #111);
+  padding: 0;
+  margin: 0;
+}
+
+.txt__title__small {
+  @include styeText(16px, 400, 1.9, #999);
+  padding: 0;
+  margin: 1rem auto 3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+  max-width: 800px;
+}

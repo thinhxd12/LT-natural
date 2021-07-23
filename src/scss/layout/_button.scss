@@ -1,0 +1,45 @@
+.btn__readmore {
+  padding: 13px 26px;
+  color: $black-color;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  font-size: 15px;
+  background: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  max-width: 150px;
+  &:hover {
+    transition: 0.5s all;
+    opacity: 0.8;
+    color: $black-color;
+  }
+}
+
+.btn__learnmore {
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 0px;
+  padding: 13px 22px;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  &:hover {
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+  }
+}
+
+.btn__learnmore__1 {
+  @extend .btn__learnmore;
+  color: $white-color;
+  border: 1px solid rgba(255, 255, 255, 1);
+  &:hover {
+    color: $white-color;
+    opacity: 0.8;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}

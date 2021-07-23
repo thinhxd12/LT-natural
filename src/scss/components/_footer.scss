@@ -1,0 +1,74 @@
+.footer__brand {
+  a {
+    @include styeText(80px, bold, 80px, $primary-color);
+    font-family: "Tangerine", cursive;
+    letter-spacing: 4px;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.27);
+    transition: 0.5s all;
+    max-width: 500px;
+    &:hover {
+      opacity: 0.8;
+      color: $primary-color 0.8;
+    }
+  }
+  p {
+    @include styeText(16px, 400, 1.9, $font-color);
+    letter-spacing: 1px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 2rem;
+  }
+  text-align: left;
+}
+
+.footer__address {
+  text-align: right;
+  h3 {
+    @include styeText(36px, 600, 1.2, $black-color);
+    letter-spacing: 1px;
+  }
+  p {
+    @include styeText(16px, 400, 2, $font-color);
+    letter-spacing: 1px;
+    &:first-of-type {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: $secondary-color;
+    }
+  }
+}
+
+.footer__social {
+  a {
+    i {
+      color: $black-color;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    display: inline-block;
+    padding: 24px 0;
+  }
+  text-align: center;
+}
+
+.footer__bottom {
+  p {
+    @include styeText(15px, 400, 1.9, $black-color);
+    letter-spacing: 1px;
+    font-family: "Source Sans Pro", sans-serif;
+    a {
+      color: $black-color;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-family: "Source Sans Pro", sans-serif;
+      &:hover {
+        opacity: 0.8;
+        transition: 0.5s all;
+      }
+    }
+  }
+  text-align: center;
+  padding: 1rem 0;
+  background: #eee;
+}
